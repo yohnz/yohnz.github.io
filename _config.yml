@@ -4,10 +4,10 @@
 
 # Site
 title: 云雾
-subtitle:
-description:
-author: Yohnz
-language:
+subtitle: 
+description: 一个安静的小博客
+author: 云雾
+language: zh-cn
 timezone:
 
 # URL
@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -69,5 +69,7 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/yohnz/yohnz.github.io
+  repo: 
+      github: git@github.com:yohnz/yohnz.github.io.git
+      gitcafe: git@git.coding.net:yun_wu/blog.git
   branch: master
