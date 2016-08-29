@@ -1,12 +1,13 @@
 title: hexo NEXT主题打开慢的问题
 date: 2016-02-17 19:07:24
-tags:
+tags: Hexo
+categories: 前端
 ---
 
 今天把博客部署到coding.net上，想加快国内访问速度，部署之后发现依然很慢，F12了一下，发现了这货：
 {% asset_img 111.png 图一%}
 原来引用了google字体库，21秒。。。卡的就是你啊。。
-
+<!-- more -->
 于是全局搜索`fonts.googleapis.com`，找到如下引用代码：
 
 ```

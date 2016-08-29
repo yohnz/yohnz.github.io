@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 云雾
+title: 酱油铺
 subtitle: 
-description: 一个安静的小博客
-author: 云雾
-language: zh-cn
+description: 这是一个酱油铺
+author: 打酱油的小前端
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: next
+theme: card
+
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -71,5 +72,5 @@ deploy:
   type: git
   repo: 
       github: git@github.com:yohnz/yohnz.github.io.git
-      gitcafe: git@git.coding.net:yun_wu/blog.git
+      # gitcafe: git@git.coding.net:yun_wu/blog.git
   branch: master

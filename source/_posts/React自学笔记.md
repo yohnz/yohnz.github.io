@@ -1,6 +1,7 @@
 title: React自学笔记
 date: 2016-02-19 18:06:33
 tags: React
+categories: 前端
 ---
 
 本文记录一些我在自学React过程中遇到的问题
@@ -23,7 +24,7 @@ var CommentBox = React.createClass({
 	}
 })
 ```
-
+<!-- more -->
 ES6写法：
 ```javascript
 class CommentBox extends React.Component{

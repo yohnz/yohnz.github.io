@@ -1,6 +1,7 @@
 title: "'react-native踩过的坑'"
 date: 2016-04-15 12:18:37
 tags: react-native
+categories: 前端
 ---
 
 ### 小米真机运行白屏
@@ -12,8 +13,10 @@ tags: react-native
 
 {% asset_img 11.png %}
 
+<!-- more -->
+
 ### "lodash/find"错误
-这种错误常见于真机运行时出现，而模拟器正常。
+这种错误常见于真机运行时出现，而模拟器正常,如图：
 
 {% asset_img 2.png %}
 

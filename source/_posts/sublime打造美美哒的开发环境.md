@@ -1,10 +1,12 @@
 title: sublime打造美美哒的开发环境
 date: 2016-02-26 11:09:13
-tags:
+tags: sublime
+categories: 工具
 ---
 最近折腾了下sublime,同事说很漂亮，就分享一下。
 先上美图镇楼：
  {% asset_img 1.png 高清美图一%}
+ <!-- more -->
  {% asset_img 2.png 高清美图二%}
  {% asset_img 3.png 高清美图三%}
 

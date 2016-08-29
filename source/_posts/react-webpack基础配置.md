@@ -1,7 +1,7 @@
 title: react+webpack+es6基础配置
 date: 2016-02-17 16:00:20
 tags: React
-
+categories: 前端
 ---
 
 今天折腾react,发现很多react+webpack的入门文章推荐里的webpack.config.js配置基本如下：
@@ -44,7 +44,7 @@ Module build failed: SyntaxError: E:/myCode/React/entry.js: Unexpected token (4:
 
 逛了很多社区，发现给出的方案都不能解决问题，心里有成千上万的马奔腾而过啊！
 最后折腾了很久发现，需要在webpack.config.js里添加：
-
+<!-- more -->
 `query: {presets: ['react', 'es2015']}`
 
 ==！
