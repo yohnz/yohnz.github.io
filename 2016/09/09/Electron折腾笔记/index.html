@@ -3,20 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>hexo NEXT主题打开慢的问题 | 酱油铺</title>
+    <title>Electron折腾笔记 | 酱油铺</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="今天把博客部署到coding.net上，想加快国内访问速度，部署之后发现依然很慢，F12了一下，发现了这货：原来引用了google字体库，21秒。。。卡的就是你啊。。">
+    <meta name="description" content="Electron折腾笔记
+背景部门的项目每次开发都需要手动开启三个服务：server、webpack、grunt，每个服务都要输入一些东西（端口号，项目命，项目类型，启动器名）。而且，在推送调试的时候，这三项服务非常容易被终止掉，然后又得一个个开起来，总之每天都要来上那么10几遍吧。看图：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo NEXT主题打开慢的问题">
-<meta property="og:url" content="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/index.html">
+<meta property="og:title" content="Electron折腾笔记">
+<meta property="og:url" content="http://yohnz.github.io/2016/09/09/Electron折腾笔记/index.html">
 <meta property="og:site_name" content="酱油铺">
-<meta property="og:description" content="今天把博客部署到coding.net上，想加快国内访问速度，部署之后发现依然很慢，F12了一下，发现了这货：原来引用了google字体库，21秒。。。卡的就是你啊。。">
-<meta property="og:image" content="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/111.png">
-<meta property="og:image" content="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/222.png">
-<meta property="og:updated_time" content="2016-08-29T07:19:20.357Z">
+<meta property="og:description" content="Electron折腾笔记
+背景部门的项目每次开发都需要手动开启三个服务：server、webpack、grunt，每个服务都要输入一些东西（端口号，项目命，项目类型，启动器名）。而且，在推送调试的时候，这三项服务非常容易被终止掉，然后又得一个个开起来，总之每天都要来上那么10几遍吧。看图：">
+<meta property="og:image" content="http://7xn0vc.com1.z0.glb.clouddn.com/electron_icon.jpg">
+<meta property="og:updated_time" content="2016-09-09T09:40:10.139Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo NEXT主题打开慢的问题">
-<meta name="twitter:description" content="今天把博客部署到coding.net上，想加快国内访问速度，部署之后发现依然很慢，F12了一下，发现了这货：原来引用了google字体库，21秒。。。卡的就是你啊。。">
+<meta name="twitter:title" content="Electron折腾笔记">
+<meta name="twitter:description" content="Electron折腾笔记
+背景部门的项目每次开发都需要手动开启三个服务：server、webpack、grunt，每个服务都要输入一些东西（端口号，项目命，项目类型，启动器名）。而且，在推送调试的时候，这三项服务非常容易被终止掉，然后又得一个个开起来，总之每天都要来上那么10几遍吧。看图：">
     
 
     
@@ -209,7 +211,7 @@
 </aside>
 
             
-            <section id="main"><article id="post-hexo打开慢的问题" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-Electron折腾笔记" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -217,7 +219,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            hexo NEXT主题打开慢的问题
+            Electron折腾笔记
         </h1>
     
 
@@ -226,8 +228,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/02/17/hexo打开慢的问题/">
-            <time datetime="2016-02-17T11:07:24.000Z" itemprop="datePublished">2016-02-17</time>
+        <a href="/2016/09/09/Electron折腾笔记/">
+            <time datetime="2016-09-09T09:20:03.000Z" itemprop="datePublished">2016-09-09</time>
         </a>
     </div>
 
@@ -241,7 +243,7 @@
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+        <a class="tag-link" href="/tags/Electron折腾笔记/">Electron折腾笔记</a>
     </div>
 
                     </div>
@@ -252,10 +254,43 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>今天把博客部署到coding.net上，想加快国内访问速度，部署之后发现依然很慢，F12了一下，发现了这货：<br><img src="/2016/02/17/hexo打开慢的问题/111.png" alt="图一" title="图一"><br>原来引用了google字体库，21秒。。。卡的就是你啊。。<br><a id="more"></a><br>于是全局搜索<code>fonts.googleapis.com</code>，找到如下引用代码：</p>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template_tag">&#123;% <span class="keyword">if</span> theme.use_font_lato %&#125;</span><span class="xml"></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&amp;subset=latin,latin-ext"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span></span><br><span class="line"></span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
-<p>这里我们把google节点改成国内的CDN，即把<code>fonts.googleapis.com</code>修改成<code>fonts.useso.com</code><br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template_tag">&#123;% <span class="keyword">if</span> theme.use_font_lato %&#125;</span><span class="xml"></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"//fonts.useso.com/css?family=Lato:300,400,700,400italic&amp;subset=latin,latin-ext"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span></span><br><span class="line"></span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure></p>
-<p>更新完之后，再打开博客，爽的飞起有木有：<br><img src="/2016/02/17/hexo打开慢的问题/222.png" alt="图二" title="图二"></p>
+            <p>Electron折腾笔记</p>
+<h3 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h3><p>部门的项目每次开发都需要手动开启三个服务：server、webpack、grunt，每个服务都要输入一些东西（端口号，项目命，项目类型，启动器名）。而且，在推送调试的时候，这三项服务非常容易被终止掉，然后又得一个个开起来，总之每天都要来上那么10几遍吧。看图：<br><img src="http://7xn0vc.com1.z0.glb.clouddn.com/electron_1.png" alt="服务"><br> <a id="more"></a></p>
+<h3 id="u601D_u8003"><a href="#u601D_u8003" class="headerlink" title="思考"></a>思考</h3><p>如果可以一键启动三个服务，又可以免去手动输入参数岂不又多了点偷懒的时间？</p>
+<h3 id="u5F00_u5DE5"><a href="#u5F00_u5DE5" class="headerlink" title="开工"></a>开工</h3><p>因为想做成小软件的形式，所以选用了Electron。以下是一些主要的思路和功能代码记录。</p>
+<h4 id="u5DE5_u5177_u7A97_u53E3"><a href="#u5DE5_u5177_u7A97_u53E3" class="headerlink" title="工具窗口"></a>工具窗口</h4><p>  工具窗口部分，基本上用官网guide里的代码就足够了<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> electron = <span class="built_in">require</span>(<span class="string">"electron"</span>);</span><br><span class="line"><span class="keyword">const</span> &#123;app, BrowserWindow, shell, ipcMain&#125; = electron;</span><br><span class="line"><span class="keyword">let</span> win;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createWdindow</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    win = <span class="keyword">new</span> BrowserWindow(&#123; width: <span class="number">400</span>, height: <span class="number">680</span>,resizable:<span class="literal">true</span>,title: <span class="string">'prensterTool'</span>,&#125;)</span><br><span class="line">    win.loadURL(<span class="string">`file://<span class="subst">$&#123;__dirname&#125;</span>/index.html`</span>)</span><br><span class="line">    win.on(<span class="string">"close"</span>, () =&gt; &#123;       </span><br><span class="line">        win = <span class="literal">null</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">app.on(<span class="string">"ready"</span>, createWdindow);</span><br><span class="line"><span class="comment">// 当全部窗口关闭时退出</span></span><br><span class="line">app.on(<span class="string">'window-all-closed'</span>, () =&gt; &#123;    </span><br><span class="line">    <span class="comment">// 在 macOS 上，除非用户用 Cmd + Q 确定地退出，</span></span><br><span class="line">    <span class="comment">// 否则绝大部分应用及其菜单栏会保持激活。</span></span><br><span class="line">    <span class="keyword">if</span> (process.platform !== <span class="string">'darwin'</span>) &#123;</span><br><span class="line">        app.quit();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">app.on(<span class="string">'activate'</span>, () =&gt; &#123;</span><br><span class="line">    <span class="comment">// 在 macOS 上，当点击 dock 图标并且该应用没有打开的窗口时，</span></span><br><span class="line">    <span class="comment">// 绝大部分应用会重新创建一个窗口。</span></span><br><span class="line">    <span class="keyword">if</span> (mainWindow === <span class="literal">null</span>) &#123;</span><br><span class="line">        createWindow();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h4 id="u81EA_u5B9A_u4E49_u83DC_u5355"><a href="#u81EA_u5B9A_u4E49_u83DC_u5355" class="headerlink" title="自定义菜单"></a>自定义菜单</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> remote = <span class="built_in">require</span>(<span class="string">'electron'</span>).remote;</span><br><span class="line"><span class="keyword">const</span> Menu = remote.Menu;</span><br><span class="line"><span class="keyword">const</span> MenuItem = remote.MenuItem;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> template = [</span><br><span class="line">  &#123;</span><br><span class="line">    label: <span class="string">'配置'</span>,</span><br><span class="line">    submenu: [</span><br><span class="line">      &#123; label: <span class="string">'重新配置'</span>, accelerator: <span class="string">'CmdOrCtrl+shift+alt+r'</span>, click: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; reset(); &#125; &#125;,</span><br><span class="line">      &#123; label: <span class="string">'保存配置'</span>, accelerator: <span class="string">'CmdOrCtrl+shift+alt+s'</span>, click: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; saveSetting(); &#125; &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// ……</span></span><br><span class="line">];</span><br><span class="line"><span class="keyword">var</span> menu = Menu.buildFromTemplate(template);</span><br><span class="line">Menu.setApplicationMenu(menu);</span><br></pre></td></tr></table></figure>
+<h4 id="u4FDD_u5B58_u914D_u7F6E_u4FE1_u606F"><a href="#u4FDD_u5B58_u914D_u7F6E_u4FE1_u606F" class="headerlink" title="保存配置信息"></a>保存配置信息</h4><p>  在工作目录拖拽小工具上时，读取文件目录，本写入配置文件，供后面的功能使用。<br>  <strong>读取文件路径</strong>：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> file = e.dataTransfer.files[<span class="number">0</span>];</span><br><span class="line">presenterPath = file.path;</span><br><span class="line">showInfo(presenterPath);</span><br></pre></td></tr></table></figure></p>
+<p><strong>写入配置文件</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = <span class="string">`module.exports =`</span> &#123;projectName:<span class="string">"$&#123;projectName&#125;"</span>,presenterId:<span class="string">"$&#123;presenterId&#125;"</span>&#125;<span class="string">`;</span><br><span class="line"> fs.writeFile("./resources/app/project_config.js", data, function (err) &#123;</span><br><span class="line">   if (err) &#123;</span><br><span class="line">     showInfo(err.toString());</span><br><span class="line">     return;</span><br><span class="line">   &#125;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="u8C03_u7528_u670D_u52A1"><a href="#u8C03_u7528_u670D_u52A1" class="headerlink" title="调用服务"></a>调用服务</h4><p>调用服务部分，主要用到nodejs的子进程<code>exec</code>。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">functon startServices()&#123;</span><br><span class="line"><span class="comment">// webpack  </span></span><br><span class="line"><span class="keyword">var</span> processWebpack = childProcess.exec(<span class="string">'webpack --watch'</span>, &#123; <span class="string">'cwd'</span>: <span class="string">`<span class="subst">$&#123;__path&#125;</span>/presenters/SubjectToolSolution/<span class="subst">$&#123;presenterId&#125;</span>/src`</span> &#125;);</span><br><span class="line">showLog(<span class="string">'Webpack'</span>, processWebpack);</span><br><span class="line">pids.push(processWebpack.pid);</span><br><span class="line"><span class="comment">// server</span></span><br><span class="line"><span class="keyword">var</span> processServices = childProcess.exec(<span class="string">'node services'</span>, &#123; <span class="string">'cwd'</span>: __path &#125;);</span><br><span class="line">showLog(<span class="string">'Server'</span>, processServices);</span><br><span class="line">pids.push(processServices.pid);</span><br><span class="line"><span class="comment">// grunt</span></span><br><span class="line"><span class="keyword">var</span> processGrunt = childProcess.exec(<span class="string">'node gruntTask'</span>, &#123; <span class="string">'cwd'</span>: __dirname &#125;);</span><br><span class="line">showLog(<span class="string">'Grunt'</span>, processGrunt);</span><br><span class="line">pids.push(processGrunt.pid);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="u8E29_u5751"><a href="#u8E29_u5751" class="headerlink" title="踩坑"></a>踩坑</h4><ul>
+<li><p>Electron关闭的时候不会关闭node的子进程，所以，要手动关闭。<br>开始做的时候，服务总是偶尔开启成功，后面就不行了，很是诡异，查了一下午都无果，直到我无意中开了任务管理器，看到那一堆的node服务…</p>
+<p>思路：开启服务的时候把子进程的pid存起来，待后面kill.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> platform = process.platform;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">killTask</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (platform === <span class="string">'win32'</span>) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> pid <span class="keyword">of</span> pids) &#123;</span><br><span class="line">        childProcess.exec(<span class="string">'taskkill /pid '</span> + pid + <span class="string">' /T /F'</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      pids = [];</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> pid <span class="keyword">of</span> pids) &#123;</span><br><span class="line">        process.kill(processServices.pid);</span><br><span class="line">      &#125;</span><br><span class="line">      pids = [];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">    showInfo(<span class="string">'pid not found'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  domLog.innerHTML = <span class="string">""</span>;</span><br><span class="line">  showInfo(<span class="string">"服务已停止!"</span>);</span><br><span class="line">  clearInterval(timerId);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Electron打包完之后，代码里的path变了，要手动处理下，不知道是不是姿势不对？</p>
+</li>
+</ul>
+<h4 id="ELectron_u6253_u5305"><a href="#ELectron_u6253_u5305" class="headerlink" title="ELectron打包"></a>ELectron打包</h4><p>关于打包的问题，官网的文档看的我真是一脸懵逼，知乎专栏的这篇文章不错，可以参考下<a href="https://zhuanlan.zhihu.com/p/20225295" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/20225295</a></p>
+<ul>
+<li>步骤</li>
+</ul>
+<ol>
+<li><p>安装electron-packager：</p>
+  <figure class="highlight"><figcaption><span>install --save-dev electron-packager```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2. package.json&#37324;&#28155;&#21152;&#25171;&#21253;&#21629;&#20196;&#65306;&#10;   ```json&#10;    &#34;scripts&#34;: &#123;&#10;    &#34;start&#34;: &#34;electron .&#34;,&#10;    &#34;package&#34;: &#34;electron-packager ./ app --win --out presenterTool --arch=x64 --version 1.3.4 --overwrite --ignore=node_modules&#34; &#10;     &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行： </p>
+<figure class="highlight"><figcaption><span>run-script package```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;- &#21442;&#25968;</span><br></pre></td></tr></table></figure>
+<p>electron-packager <location of="" project=""> <name of="" project=""> <platform> <architecture> <electron version=""> <optional options=""><br><code>``
+</code>location of project<code>:应用目录;</code>name of project<code>:应用名称;</code>platform<code>:要打包的平台;</code>architecture<code>: x86 or x64架构;</code>electron version<code>:electron 版本(不是应用版本);</code>optional options`:其它选项;<br>​</optional></electron></architecture></platform></name></location></p>
+</li>
+</ol>
+<ul>
+<li>第一次打包会下载相应的包，时间比较久</li>
+<li>记得打包参数里写上<code>overwrite</code>，不然后面打包时不会重新构建。</li>
+</ul>
+<p>最后，上一张初步完成之后的运行图：</p>
+<p><img src="http://7xn0vc.com1.z0.glb.clouddn.com/9.gif" alt=""></p>
 
         
         </div>
@@ -266,7 +301,7 @@
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/" data-id="cisvkare1000ls849k0q1pfnr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/09/09/Electron折腾笔记/" data-id="cisvkare1000ss849ce4ef5cl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -334,7 +369,7 @@
 
             
     
-        <a href="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/">评论</a>
+        <a href="http://yohnz.github.io/2016/09/09/Electron折腾笔记/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://yohnz.github.io/2016/09/09/Electron折腾笔记/">评论</a>
     
 
         </footer>
@@ -343,19 +378,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2016/02/19/React自学笔记/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
-            <div class="article-nav-title">
-                
-                    React自学笔记
-                
-            </div>
-        </a>
     
-    
-        <a href="/2016/02/17/react-webpack基础配置/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2016/05/17/自己动手写chrome天气扩展/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">react+webpack+es6基础配置</div>
+            <div class="article-nav-title">极简天气</div>
         </a>
     
 </nav>
@@ -369,7 +395,7 @@
     <section id="comments">
     
         
-    <div class="ds-thread" data-thread-key="2016/02/17/hexo打开慢的问题/" data-title="hexo NEXT主题打开慢的问题" data-url="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/"></div>
+    <div class="ds-thread" data-thread-key="2016/09/09/Electron折腾笔记/" data-title="Electron折腾笔记" data-url="http://yohnz.github.io/2016/09/09/Electron折腾笔记/"></div>
     <style>
         #ds-thread #ds-reset .ds-textarea-wrapper {
             background: none;

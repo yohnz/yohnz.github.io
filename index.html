@@ -154,11 +154,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                6
+                7
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                5
+                6
                 <span>标签</span>
             </div>
         </div>
@@ -207,6 +207,140 @@
 
             
             <section id="main">
+    <article id="post-Electron折腾笔记" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/09/09/Electron折腾笔记/">Electron折腾笔记</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/09/09/Electron折腾笔记/">
+            <time datetime="2016-09-09T09:20:03.000Z" itemprop="datePublished">2016-09-09</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/前端/">前端</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Electron折腾笔记/">Electron折腾笔记</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p>Electron折腾笔记</p>
+<h3 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h3><p>部门的项目每次开发都需要手动开启三个服务：server、webpack、grunt，每个服务都要输入一些东西（端口号，项目命，项目类型，启动器名）。而且，在推送调试的时候，这三项服务非常容易被终止掉，然后又得一个个开起来，总之每天都要来上那么10几遍吧。看图：<br><img src="http://7xn0vc.com1.z0.glb.clouddn.com/electron_1.png" alt="服务"><br></p>
+            <p class="article-more-link">
+                <a href="/2016/09/09/Electron折腾笔记/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yohnz.github.io/2016/09/09/Electron折腾笔记/" data-id="cisvkare1000ss849ce4ef5cl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yohnz.github.io/2016/09/09/Electron折腾笔记/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://yohnz.github.io/2016/09/09/Electron折腾笔记/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-自己动手写chrome天气扩展" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -264,7 +398,7 @@
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/05/17/自己动手写chrome天气扩展/" data-id="cisgulde400083049do3l1wo7" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/05/17/自己动手写chrome天气扩展/" data-id="cisvkard60003s849twmf4t1t" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -403,7 +537,7 @@
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/04/15/react-native踩过的坑/" data-id="cisguldep000k30492qadi00q" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/04/15/react-native踩过的坑/" data-id="cisvkardm000hs849ssvd35h1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -536,7 +670,7 @@
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/02/26/sublime打造美美哒的开发环境/" data-id="cisgulde4000c3049sda2wkxd" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/02/26/sublime打造美美哒的开发环境/" data-id="cisvkard60008s8494lr4s9nb" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -678,7 +812,7 @@
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/02/19/React自学笔记/" data-id="cisgulddp00003049q41u4pc4" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/02/19/React自学笔记/" data-id="cisvkare1000ps84994i77a7w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -811,7 +945,7 @@
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/" data-id="cisgulder000o3049vokcgfhr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/02/17/hexo打开慢的问题/" data-id="cisvkare1000ls849k0q1pfnr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -947,7 +1081,7 @@
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/02/17/react-webpack基础配置/" data-id="cisgulden000h304991274z3f" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/02/17/react-webpack基础配置/" data-id="cisvkardm000ds849twn78789" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1038,10 +1172,29 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2016/09/09/Electron折腾笔记/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://7xn0vc.com1.z0.glb.clouddn.com/electron_icon.jpg)" alt="Electron折腾笔记" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端/">前端</a></p>
+                            <p class="item-title"><a href="/2016/09/09/Electron折腾笔记/" class="title">Electron折腾笔记</a></p>
+                            <p class="item-date"><time datetime="2016-09-09T09:20:03.000Z" itemprop="datePublished">2016-09-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2016/05/17/自己动手写chrome天气扩展/" class="thumbnail">
     
     
-        <span style="background-image:url(http://7xn0vc.com1.z0.glb.clouddn.com/blog/1.png)" alt="极简天气" class="thumbnail-image"></span>
+        <span style="background-image:url(http://7xn0vc.com1.z0.glb.clouddn.com/%E6%9E%81%E7%AE%80%E5%A4%A9%E6%B0%94icon.jpg)" alt="极简天气" class="thumbnail-image"></span>
     
 </a>
 
@@ -1060,7 +1213,7 @@
                             <a href="/2016/04/15/react-native踩过的坑/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(http://7xn0vc.com1.z0.glb.clouddn.com/Rect_icon.jpg)" alt="&#39;react-native踩过的坑&#39;" class="thumbnail-image"></span>
     
 </a>
 
@@ -1079,7 +1232,7 @@
                             <a href="/2016/02/26/sublime打造美美哒的开发环境/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(http://7xn0vc.com1.z0.glb.clouddn.com/sublime_icon.jpg)" alt="sublime打造美美哒的开发环境" class="thumbnail-image"></span>
     
 </a>
 
@@ -1098,7 +1251,7 @@
                             <a href="/2016/02/19/React自学笔记/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(http://7xn0vc.com1.z0.glb.clouddn.com/Rect_icon.jpg)" alt="React自学笔记" class="thumbnail-image"></span>
     
 </a>
 
@@ -1111,25 +1264,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2016/02/17/hexo打开慢的问题/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/前端/">前端</a></p>
-                            <p class="item-title"><a href="/2016/02/17/hexo打开慢的问题/" class="title">hexo NEXT主题打开慢的问题</a></p>
-                            <p class="item-date"><time datetime="2016-02-17T11:07:24.000Z" itemprop="datePublished">2016-02-17</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -1139,7 +1273,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1148,7 +1282,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -1157,7 +1291,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome扩展/">chrome扩展</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-native/">react-native</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/">sublime</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Electron折腾笔记/">Electron折腾笔记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome扩展/">chrome扩展</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-native/">react-native</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/">sublime</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1166,7 +1300,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Hexo/" style="font-size: 10px; color: #999">Hexo</a> <a href="/tags/React/" style="font-size: 20px; color: #333">React</a> <a href="/tags/chrome扩展/" style="font-size: 10px; color: #999">chrome扩展</a> <a href="/tags/react-native/" style="font-size: 10px; color: #999">react-native</a> <a href="/tags/sublime/" style="font-size: 10px; color: #999">sublime</a>
+            <a href="/tags/Electron折腾笔记/" style="font-size: 10px; color: #999">Electron折腾笔记</a> <a href="/tags/Hexo/" style="font-size: 10px; color: #999">Hexo</a> <a href="/tags/React/" style="font-size: 20px; color: #333">React</a> <a href="/tags/chrome扩展/" style="font-size: 10px; color: #999">chrome扩展</a> <a href="/tags/react-native/" style="font-size: 10px; color: #999">react-native</a> <a href="/tags/sublime/" style="font-size: 10px; color: #999">sublime</a>
         </div>
     </div>
 
