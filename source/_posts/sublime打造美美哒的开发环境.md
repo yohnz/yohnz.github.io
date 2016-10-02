@@ -2,6 +2,7 @@ title: sublime打造美美哒的开发环境
 date: 2016-02-26 11:09:13
 tags: sublime
 categories: 工具
+thumbnail: http://7xn0vc.com1.z0.glb.clouddn.com/sublime_icon.jpg
 ---
 最近折腾了下sublime,同事说很漂亮，就分享一下。
 先上美图镇楼：

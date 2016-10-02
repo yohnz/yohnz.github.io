@@ -2,7 +2,7 @@ title: 极简天气
 date: 2016-05-17 08:58:54
 tags: chrome扩展
 categories: 前端
-thumbnail: http://7xn0vc.com1.z0.glb.clouddn.com/blog/1.png
+thumbnail: http://7xn0vc.com1.z0.glb.clouddn.com/%E6%9E%81%E7%AE%80%E5%A4%A9%E6%B0%94icon.jpg
 ---
 
 先上效果图：

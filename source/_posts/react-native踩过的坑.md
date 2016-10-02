@@ -2,6 +2,7 @@ title: "'react-native踩过的坑'"
 date: 2016-04-15 12:18:37
 tags: react-native
 categories: 前端
+thumbnail: http://7xn0vc.com1.z0.glb.clouddn.com/Rect_icon.jpg
 ---
 
 ### 小米真机运行白屏

@@ -2,6 +2,7 @@ title: React自学笔记
 date: 2016-02-19 18:06:33
 tags: React
 categories: 前端
+thumbnail: http://7xn0vc.com1.z0.glb.clouddn.com/Rect_icon.jpg
 ---
 
 本文记录一些我在自学React过程中遇到的问题
