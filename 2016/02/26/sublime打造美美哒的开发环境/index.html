@@ -33,6 +33,8 @@
     <script src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     
     
+        <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css" type="text/css">
+    
     
     
     
@@ -253,6 +255,10 @@ var _hmt = _hmt || [];
         <a class="tag-link" href="/tags/sublime/">sublime</a>
     </div>
 
+                        
+     <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
+     <span id="/2016/02/26/sublime打造美美哒的开发环境/" class="leancloud_visitors"  data-flag-title="sublime打造美美哒的开发环境">0</span>
+
                     </div>
                 
             </header>
@@ -281,7 +287,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/02/26/sublime打造美美哒的开发环境/" data-id="ciu0ma8l70008y849s65u6vpy" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/02/26/sublime打造美美哒的开发环境/" data-id="cit9kb3dp0008oo49wmpmks7p" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -612,9 +618,111 @@ var _hmt = _hmt || [];
 
 
     
+        <script src="/vendor/lightgallery/js/lightgallery.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-thumbnail.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-pager.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-autoplay.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-fullscreen.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-zoom.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-hash.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-share.min.js" type="text/javascript"></script>
+        <script src="/vendor/lightgallery/js/lg-video.min.js" type="text/javascript"></script>
+    
     
 
 
+<!-- custom analytics part create by xiamo -->
+<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+<script>
+AV.init({
+  appId: 'r0XIK1KpQzMwK3MtLwmQSQ9u-gzGzoHsz',
+  appKey: 'jRmeAl8bYqUlfcOiwBboUhhR'
+});
+
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+		var visitors= $('.leancloud_visitors');
+		query.greaterThanOrEqualTo("time", 0);		
+		query.find({
+			success: function(results) {
+				console.log(results);
+				if (results.length == 0) {
+					var content = 0;
+					$that.text(content);
+					return;
+				}
+				var data = results;
+				visitors.each(function(){
+					var url = $(this).attr('id').trim();					
+					for (var i = 0; i < data.length; i++) {
+						var object = data[i];
+						var content = object.get('time');
+						var _url = object.get('url')
+						if(url == _url){
+							$(this).text(content);
+						}
+					}
+				})
+				
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content = counter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = newcounter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else {
+		showTime(Counter);
+	}
+}); 
+</script>
 
 <!-- Custom Scripts -->
 <script src="/js/main.js" type="text/javascript"></script>
