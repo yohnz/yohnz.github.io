@@ -476,10 +476,7 @@ function showTime(Counter) {
 		query.greaterThanOrEqualTo("time", 0);		
 		query.find({
 			success: function(results) {
-				console.log(results);
-				if (results.length == 0) {
-					var content = 0;
-					$that.text(content);
+				if (results.length == 0) {				
 					return;
 				}
 				var data = results;

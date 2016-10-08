@@ -314,7 +314,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/02/19/React自学笔记/" data-id="cit9kb3eq000too49zznq6399" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/02/19/React自学笔记/" data-id="ciu0xkvis000t6g49b81p60wq" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -672,10 +672,7 @@ function showTime(Counter) {
 		query.greaterThanOrEqualTo("time", 0);		
 		query.find({
 			success: function(results) {
-				console.log(results);
-				if (results.length == 0) {
-					var content = 0;
-					$that.text(content);
+				if (results.length == 0) {				
 					return;
 				}
 				var data = results;

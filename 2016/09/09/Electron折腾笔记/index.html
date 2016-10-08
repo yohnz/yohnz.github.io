@@ -329,7 +329,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/09/09/Electron折腾笔记/" data-id="cit9kb3eu000woo49hexrwetr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/09/09/Electron折腾笔记/" data-id="ciu0xkvj8000w6g49cjnvkoz5" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -687,10 +687,7 @@ function showTime(Counter) {
 		query.greaterThanOrEqualTo("time", 0);		
 		query.find({
 			success: function(results) {
-				console.log(results);
-				if (results.length == 0) {
-					var content = 0;
-					$that.text(content);
+				if (results.length == 0) {				
 					return;
 				}
 				var data = results;
