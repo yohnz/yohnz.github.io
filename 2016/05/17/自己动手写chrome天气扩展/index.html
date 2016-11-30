@@ -322,7 +322,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/05/17/自己动手写chrome天气扩展/" data-id="ciufb9q1e00034w493e089kn6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/05/17/自己动手写chrome天气扩展/" data-id="ciw4ai4a60003ko496lgvnwyw" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -424,13 +424,16 @@ var _hmt = _hmt || [];
     <section id="comments">
     
         
+    <div class="last-visitors"><div class="line"></div>&nbsp;&nbsp;最近访客</div>
+    <div class="ds-recent-visitors" data-num-items="100" data-avatar-size="30" id="ds-recent-visitors"></div>
     <div class="ds-thread" data-thread-key="2016/05/17/自己动手写chrome天气扩展/" data-title="极简天气" data-url="http://yohnz.github.io/2016/05/17/自己动手写chrome天气扩展/"></div>
-    <style>
+    <style>        
         #ds-thread #ds-reset .ds-textarea-wrapper {
             background: none;
         }
         #ds-reset .ds-avatar img {
-            box-shadow: none;
+            // box-shadow: none;
+            border-radius:50%;
         }
         #ds-reset .ds-gradient-bg {
             background: #f7f7f7;
@@ -460,6 +463,24 @@ var _hmt = _hmt || [];
             box-shadow: none;
             text-shadow: none;
             font-weight: normal;
+        }
+         #ds-recent-visitors{
+             border-bottom:1px dashed #ccc;
+             padding:10px 0;
+
+         }
+        #ds-recent-visitors img{border-radius:50%;}
+        .last-visitors{
+            font-size:16px;
+            width:100%;
+            height:40px;
+            line-height:40px;
+        }
+        .last-visitors div{
+            width:5px;
+            height:40px;
+            background:#ccc;
+            float:left;
         }
     </style>
 
