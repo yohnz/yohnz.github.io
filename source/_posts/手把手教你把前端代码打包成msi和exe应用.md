@@ -103,7 +103,7 @@ grunt.registerTask('default', ['create-windows-installer']);
 |remoteReleases|	No|	更新链接，如果填写，当链接中有新版本，会自动下载安装。|
 
 **2.3 grunt打包**
-在命令行输入`npm grunt`,就会执行自动构建安装程序。在构建完之后的installer目录(或者你配置的输出目录)中会有如下几个文件
+在命令行输入`grunt`,就会执行自动构建安装程序。在构建完之后的installer目录(或者你配置的输出目录)中会有如下几个文件
 ![生成的安装文件](http://7xn0vc.com1.z0.glb.clouddn.com/Electron_8.jpg)
 运行setup.exe就开始自动安装了,我们去'控制面板->程序和功能'里检验一下,发现应用已经安装了。
 ![卸载列表里](http://7xn0vc.com1.z0.glb.clouddn.com/Electron_9.jpg)
