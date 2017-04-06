@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="酱油铺">
 <meta property="og:description" content="本文主要介绍Electron应用如何打包成msi和exe文件。由于介绍Electron打包成msi和exe的文章很少，官方的文档也一笔带过，在研究的过程中踩了很多坑，所以写下此文，给其他人一个参考。关于Electron基础知识的文章，官方文档很详细，在此不再赘述，还没入门的童鞋可以看看方的入门文档:https://github.com/electron/electron/blob/master/d">
 <meta property="og:image" content="http://7xn0vc.com1.z0.glb.clouddn.com/electron_12.jpg">
-<meta property="og:updated_time" content="2016-10-18T09:51:56.480Z">
+<meta property="og:updated_time" content="2017-04-06T07:39:24.162Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手把手教你把前端代码打包成msi和exe文件">
 <meta name="twitter:description" content="本文主要介绍Electron应用如何打包成msi和exe文件。由于介绍Electron打包成msi和exe的文章很少，官方的文档也一笔带过，在研究的过程中踩了很多坑，所以写下此文，给其他人一个参考。关于Electron基础知识的文章，官方文档很详细，在此不再赘述，还没入门的童鞋可以看看方的入门文档:https://github.com/electron/electron/blob/master/d">
@@ -380,7 +380,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<p><strong>2.3 grunt打包</strong><br>在命令行输入<code>npm grunt</code>,就会执行自动构建安装程序。在构建完之后的installer目录(或者你配置的输出目录)中会有如下几个文件<br><img src="http://7xn0vc.com1.z0.glb.clouddn.com/Electron_8.jpg" alt="生成的安装文件"><br>运行setup.exe就开始自动安装了,我们去’控制面板-&gt;程序和功能’里检验一下,发现应用已经安装了。<br><img src="http://7xn0vc.com1.z0.glb.clouddn.com/Electron_9.jpg" alt="卸载列表里"></p>
+<p><strong>2.3 grunt打包</strong><br>在命令行输入<code>grunt</code>,就会执行自动构建安装程序。在构建完之后的installer目录(或者你配置的输出目录)中会有如下几个文件<br><img src="http://7xn0vc.com1.z0.glb.clouddn.com/Electron_8.jpg" alt="生成的安装文件"><br>运行setup.exe就开始自动安装了,我们去’控制面板-&gt;程序和功能’里检验一下,发现应用已经安装了。<br><img src="http://7xn0vc.com1.z0.glb.clouddn.com/Electron_9.jpg" alt="卸载列表里"></p>
 <p><strong>2.4 生成快捷方式</strong><br>到此处，Electron的安装文件就打包好了，但是装完之后，没有自动生成快捷方式，所以，我们要在main.js里加入生成快捷方式的功能。</p>
 <ul>
 <li>添加监听并生成快捷方式</li>
@@ -401,7 +401,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://yohnz.github.io/2016/10/11/手把手教你把前端代码打包成msi和exe应用/" data-id="ciyxr9p8g0008j849tzq82t5i" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yohnz.github.io/2016/10/11/手把手教你把前端代码打包成msi和exe应用/" data-id="cj16cm1w80008pw49s2n39ihl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -469,8 +469,6 @@ var _hmt = _hmt || [];
 
             
     
-        <a href="http://yohnz.github.io/2016/10/11/手把手教你把前端代码打包成msi和exe应用/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://yohnz.github.io/2016/10/11/手把手教你把前端代码打包成msi和exe应用/">评论</a>
-    
 
         </footer>      
     </div>
@@ -502,67 +500,17 @@ var _hmt = _hmt || [];
     
     <section id="comments">
     
-        
-    <div class="last-visitors"><div class="line"></div>&nbsp;&nbsp;最近访客</div>
-    <div class="ds-recent-visitors" data-num-items="100" data-avatar-size="30" id="ds-recent-visitors"></div>
-    <div class="ds-thread" data-thread-key="2016/10/11/手把手教你把前端代码打包成msi和exe应用/" data-title="手把手教你把前端代码打包成msi和exe文件" data-url="http://yohnz.github.io/2016/10/11/手把手教你把前端代码打包成msi和exe应用/"></div>
-    <style>        
-        #ds-thread #ds-reset .ds-textarea-wrapper {
-            background: none;
-        }
-        #ds-reset .ds-avatar img {
-            // box-shadow: none;
-            border-radius:50%;
-        }
-        #ds-reset .ds-gradient-bg {
-            background: #f7f7f7;
-        }
-        #ds-thread #ds-reset li.ds-tab a {
-            border-radius: 3px;
-        }
-        #ds-thread #ds-reset .ds-post-button {
-            color: white;
-            border: none;
-            box-shadow: none;
-            background: #d32;
-            text-shadow: none;
-            font-weight: normal;
-            font-family: 'Microsoft Yahei';
-        }
-        #ds-thread #ds-reset .ds-post-button:hover {
-            color: white;
-            background: #DE594C;
-        }
-        #ds-thread #ds-reset .ds-post-button:active {
-            background: #d32;
-        }
-        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
-            color: white;
-            background: #d32;
-            box-shadow: none;
-            text-shadow: none;
-            font-weight: normal;
-        }
-         #ds-recent-visitors{
-             border-bottom:1px dashed #ccc;
-             padding:10px 0;
+        <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 
-         }
-        #ds-recent-visitors img{border-radius:50%;}
-        .last-visitors{
-            font-size:16px;
-            width:100%;
-            height:40px;
-            line-height:40px;
-        }
-        .last-visitors div{
-            width:5px;
-            height:40px;
-            background:#ccc;
-            float:left;
-        }
-    </style>
-
+<script>
+    var cloudTieConfig = {
+        url: document.location.href,
+        sourceId: "",
+        productKey: "ee5fb0fc4e524472a765143a5b0d1397",
+        target: "cloud-tie-wrapper"
+    };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
     
     </section>
 
@@ -737,20 +685,6 @@ var _hmt = _hmt || [];
     </div>    
 </footer>
         
-    
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:'yohnz'};
-    (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-    </script>
-
-
 
     
         <script src="/vendor/lightgallery/js/lightgallery.min.js" type="text/javascript"></script>
